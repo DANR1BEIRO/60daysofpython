@@ -1,3 +1,3 @@
 60 days of Python programming
-[ ] Day 1 - Hello World!
+[x] Day 1 - Hello World!
 
