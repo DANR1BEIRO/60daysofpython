@@ -2,4 +2,5 @@
 - [x] Day 1 - Hello World!
 - [x] Day 2 - Sum of two numbers
 - [x] Day 3 - Check even or odd
-- [] Day 4 
+- [x] Day 4 - Loop
+- [x] Day 5 - A Function that prints the square root of a number
