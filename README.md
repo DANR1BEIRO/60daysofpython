@@ -8,4 +8,4 @@
 - [x] Day 7 - Static and dynamic student dictionary
 - [x] Day 8 - Verify the driver's age
 - [x] Day 9 - Input counter
-- [x] Day 10 - Random password generator
+- [x] Day 10 - Random Password generator
