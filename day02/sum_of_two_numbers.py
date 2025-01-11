@@ -1,3 +1,4 @@
+# sum of two numbers
 def get_number(prompt):
     while True:
         try:
