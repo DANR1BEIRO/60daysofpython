@@ -7,3 +7,4 @@
 - [x] Day 6 - Fruit list
 - [x] Day 7 - Static and dynamic student dictionary
 - [x] Day 8 - Verify the driver's age
+- [x] Day 9 - Input counter
