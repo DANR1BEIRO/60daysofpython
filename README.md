@@ -5,3 +5,4 @@
 - [x] Day 4 - Loop
 - [x] Day 5 - A Function that prints the square root of a number
 - [x] Day 6 - Fruit list
+- [x] Day 7 - Static and dynamic student dictionary
