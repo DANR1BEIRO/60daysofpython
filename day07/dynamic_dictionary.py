@@ -1,3 +1,5 @@
+# dynamic dictionary
+
 student = {}
 
 student["Name"] = input("Enter the student name: ")

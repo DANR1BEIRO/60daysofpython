@@ -1,3 +1,4 @@
+# Static dictionary
 student = {
     "name": "Daniel",
     "age": 33,
