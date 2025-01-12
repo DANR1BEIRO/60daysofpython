@@ -1,4 +1,7 @@
 def check_drivers_age():
+    """
+    Function that takes the user's age and returns whether the user can drive
+    """
     while True:
         try:
             age = int(input("Enter the age: "))
