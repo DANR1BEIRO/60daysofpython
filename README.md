@@ -9,4 +9,4 @@
 - [x] Day 8 - Verify the driver's age
 - [x] Day 9 - Input counter
 - [x] Day 10 - Random Password generator
-- [x] Day 11 - Ordered list using the sorted() method
+- [x] Day 11 - Takes a user specified number of integer inputs and sorts them in ascending and descending order

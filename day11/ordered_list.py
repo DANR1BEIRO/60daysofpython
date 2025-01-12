@@ -44,8 +44,12 @@ def users_input():
         except ValueError:
             print("Only integer numbers are allowed!")
     return numbers
-            
-user_list = users_input()
-print(f"The list in ascending order is: {ascending_order(user_list)}")
-print(f"The list in descending order is: {descending_order(user_list)}")
+          
+def main():  
+    user_list = users_input()
+    print(f"The list in ascending order is: {ascending_order(user_list)}")
+    print(f"The list in descending order is: {descending_order(user_list)}")
+
+if __name__=="__main__":
+    main()
     
