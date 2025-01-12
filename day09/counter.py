@@ -1,4 +1,7 @@
 def counter():
+    """
+    Function that counts up to the limit set by the user
+    """
     while True:
         try:
             limit = int(input("Enter a limit number: "))
