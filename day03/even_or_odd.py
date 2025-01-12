@@ -1,4 +1,8 @@
 def even_or_odd():
+    """
+    Function that takes a number and returns whether
+    it is even or odd
+    """
     while True:
         try: 
             number = int(input("Enter a number: "))
