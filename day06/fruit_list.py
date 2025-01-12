@@ -1,3 +1,5 @@
+# Doing a fruit list
+
 fruit_list = []
 
 while True:
