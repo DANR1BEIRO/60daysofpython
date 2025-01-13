@@ -18,7 +18,7 @@ def linear_search(sequence, target):
     return -1 # target not found
 
 my_list = [10, 2, 4, 6, 7, 8, 11]
-target = 10
+target = 10 
 
 result = linear_search(my_list, target)
 
@@ -27,6 +27,8 @@ if result != -1:
 else:
     print(f"Number {target} not found in the list")
     
+# The index where it will start can be changed
+# Examples:
 
 fruits = ["banana", "apple", "orange"]
 print("\nStarts at index 0 (default)")
