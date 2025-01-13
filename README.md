@@ -10,4 +10,4 @@
 - [x] Day 9 - Input counter
 - [x] Day 10 - Random Password generator
 - [x] Day 11 - Takes a user specified number of integer inputs and sorts them in ascending and descending order
-- [x] Day 12 - 
+- [x] Day 12 - Linear Search
