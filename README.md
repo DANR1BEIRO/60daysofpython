@@ -13,3 +13,4 @@
 - [x] Day 12 - Linear Search
 - [x] Day 13 - Recursive factorial function
 - [x] Day 14 - Function to check prime numbers
+- [x] Day 15 - Fibonacci sequence
