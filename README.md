@@ -16,3 +16,4 @@
 - [x] Day 15 - Fibonacci sequence
 - [x] Day 16 - anagram
 - [x] Day 17 - Palindrome
+- [x] Day 18 - Counting words

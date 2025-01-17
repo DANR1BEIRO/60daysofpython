@@ -5,7 +5,7 @@ def get_palindrome(prompt):
     """
     while True:
         text = input(prompt).replace(" ", "").lower()
-        if text != "":
+        if text.strip():
             return text
         else:
             print("A empty input can't be used")
@@ -28,3 +28,4 @@ if __name__=="__main__":
 
    
     
+ 
