@@ -24,7 +24,7 @@ def anagram(word1, word2):
     word2 (str): The second word to compare
     
     returns:
-    bool: True if the words are anagrams, False otherwise
+    bool: True if the words are anagrams, False otherwise.
     
 """
     return sorted(word1) == sorted(word2)
