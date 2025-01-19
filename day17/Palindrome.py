@@ -5,7 +5,7 @@ def get_palindrome(prompt):
     """
     while True:
         text = input(prompt).replace(" ", "").lower()
-        if text.strip():
+        if text.strip(): # remove whitespaces and ensure that the string isn't empty
             return text
         else:
             print("A empty input can't be used")
