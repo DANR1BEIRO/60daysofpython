@@ -16,7 +16,7 @@ def main():
     
     returns: a message indicating whether the input is a palindrome or not"""
     
-    palindrome = get_palindrome("Enter something to check if its a palindrome: ")
+    palindrome = get_palindrome("\nEnter something to check if its a palindrome: ")
     
     if palindrome == palindrome[::-1]:
         return f"{palindrome} is a palindrome"
