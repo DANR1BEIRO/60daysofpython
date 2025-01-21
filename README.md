@@ -19,3 +19,4 @@
 - [x] Day 18 - Counting words
 - [x] Day 19 - Calculate the average of grades
 - [x] Day 20 - Transpose matrix
+- [x] Day 21 - Currency converter
