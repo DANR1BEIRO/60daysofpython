@@ -1,48 +1,65 @@
-class calculate_bmi:
-    def __init__(self):
-        self.height = self.get_height()
-        self.weight = self.get_weight()
-        self.bmi = self.get_bmi()
-        
-    BMI_categories = {
-        
-        "underweight": (0, 18.4),
-        "normal weight": (18.5, 24.9),
-        "overweight": (25.0, 29.9),
-        "obesity": (30, float('inf')),  
+class CalculateBMI:
+    
+    BMI_CATEGORIES = {
+        "Underweight": (0, 18.4),
+        "Normal weight": (18.5, 24.9),
+        "Overweight": (25.0, 29.9),
+        "Obesity": (30, float('inf')),
     }
     
-    def get_height(self):
+    def __init__(self, height=None, weight=None):
+
+        """
+        Initialize the CalculateBMI class.
+        If height and weight are not provided, prompt the user for imput
+        """
+        
+        self.height = height if height is not None else self.get_input("Enter your height (m): ", "height")
+        self.weight = weight if weight is not None else self.get_input("Enter your weight (kg): ", "weight")
+        self.bmi = self.calculate_bmi()
+        self.category = self. get_bmi_category()
+
+    def get_input(self, prompt, input_type):
+        """
+        Helper method to get valid user input for height ow weight
+        """
         while True:
             try:
-                height = float(input("Enter your height(m): "))
-                if 0 < height:
-                    return height
-                else: 
-                    print("Height can't be negative or zero")
-            except ValueError:
-                print("Enter a valid number")
-
-    def get_weight(self):
-        while True: 
-            try:
-                weight = float(input("Enter your weight(kg): "))
-                if 0 < weight:
-                    return weight
+                value = float(input(prompt))
+                if value <= 0:
+                    print(f"{input_type} must be a positive number.")
                 else:
-                    print("Weight can't be negative or zero")
+                    return value
             except ValueError:
                 print("Enter a valid number")
                 
-    def get_bmi(self):
-        
-        bmi = self.weight / (self.height ** 2)
-        
-        for category, (low, high) in self.BMI_categories.items():
-            if low <= bmi <= high:
-                print(f"\nAccording your BMI {round(bmi, 2)}, you're classified as {category}.")
-                return bmi
-            
-if __name__=="__main__": 
-    calculate_bmi()
-        
+    def calculate_bmi(self):
+        """
+        Calculate BMI using the formula: BMI = weight / (height ** 2).
+        """
+        return self.weight / (self.height ** 2)
+
+    def get_bmi_category(self):
+        """
+        Determine the BMI category based on the calculate BMI
+        """
+        for category, (low, high) in self.BMI_CATEGORIES.items():
+            if low <= self.bmi <= high:
+                return category
+        return "Unknown"
+
+    def display_results(self):
+        """
+        Display the BMI and its category
+        """
+        print(f"\nYour BMI is {round(self.bmi, 2)}.")
+        print(f"You are classified as {self.category}.")
+
+    def __str__(self):
+        return f"CalculateBMI(height={self.height}, weight={self.weight}, bmi={round(self.bmi, 2)}, category={self.category})"
+
+if __name__=="__main__":
+    
+    bmi_calculator = CalculateBMI()
+    bmi_calculator.display_results()
+
