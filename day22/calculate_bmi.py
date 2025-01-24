@@ -27,7 +27,7 @@ class CalculateBMI:
             try:
                 value = float(input(prompt))
                 if value <= 0:
-                    print(f"{input_type} must be a positive number.")
+                    print(f"{input_type.capitalize()} must be a positive number.")
                 else:
                     return value
             except ValueError:
@@ -56,10 +56,11 @@ class CalculateBMI:
         print(f"You are classified as {self.category}.")
 
     def __str__(self):
-        return f"CalculateBMI(height={self.height}, weight={self.weight}, bmi={round(self.bmi, 2)}, category={self.category})"
+        return f"\nCalculateBMI:\nHeight = {self.height}\nWeight = {self.weight}\nBMI = {round(self.bmi, 2)}\nCategory = {self.category}"
 
 if __name__=="__main__":
     
-    bmi_calculator = CalculateBMI()
-    bmi_calculator.display_results()
+    bmi = CalculateBMI(1.73, 87)
+    bmi.display_results()
+    print(bmi)
 
