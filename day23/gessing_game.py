@@ -1,45 +1,37 @@
 import random
 
-class gessing_game:
+class GuessingGame:
     """
-    A number gessing game where the player has to gess a randomly
+    A number guessing game where the player has to gess a randomly
     generated number between 1 and 100
     """
-    def __init__(self, guess=None):
+    def __init__(self, max_attempts=7):
         self.random_number = random.randint(1, 100)
         self.attempts = 0
-        self.guess = guess if guess is not None else self.get_input("Guess the number between 1 to 100: ")
+        self.max_attempts = max_attempts
+        self.guess = None
+        self.get_start()
     
-    def get_input(self, prompt):
+    def get_start(self):
         """
-        Prompt the player to enter a guess and provides 
-        feedback if it's too low, too high or correct
-        
-        arg:
-        prompt (str): The prompt message displayed to the player.
-        
-        returns:
-        int: the player's guess
+        Prompt the player to enter a guess and provide feedback
         """
-        while True:
+        while self.attempts < self.max_attempts:
             try:
-                value = int(input(prompt))
+                self.guess = int(input("Guess the number between 1 to 100: "))
                 self.attempts += 1
-                if self.attempts == 7:
-                    print(f"You've reached the maximum number of attempts. The number was {self.random_number}.")
-                    break
+                if self.guess < self.random_number:
+                    print("Too low!")
+                elif self.guess > self.random_number:
+                    print("Too high!")
                 else:
-                    if value < self.random_number:
-                        print("Too low!")
-                    elif value > self.random_number:
-                        print("Too high!")
-                    else:
-                        print("You nailed it! ")
-                        break
-                    
+                    print("\nGreat! You've nailed it!")
+                    break
             except ValueError:
-                print("Invalid input! Enter a integer number!")
-
+                print("Invalid input! try again.")
+        else:
+            print(f"You've reached the maximum number of attempts. The number was {self.random_number}.")
+     
     def __str__(self):
         """
         Provides a string representation of the game's outcome.
@@ -47,10 +39,10 @@ class gessing_game:
         str: A massage indicating whether the player guessed the 
         number and how many attempts were made
         """
-        return f"You guess the random number {self.guess} in {self.attempts} attempts" if self.guess == self.random_number else "Better luck next time!"
+        return f"You guess the random number {self.guess} in {self.attempts} attempts!" if self.guess == self.random_number else "Better luck next time!"
                 
-gess_game = gessing_game()
-print(gess_game)
+game = GuessingGame()
+print(game)
                     
                     
         
