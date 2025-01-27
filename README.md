@@ -24,3 +24,4 @@
 - [x] Day 23 - Guess game
 - [x] Day 24 - Multiplication table
 - [x] Day 25 - Random number generator
+- [x] Day 26 - Write and read a txt file

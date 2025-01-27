@@ -50,7 +50,7 @@ class CalculateBMI:
 
     def display_results(self):
         """
-        Display the BMI and its category
+        Display the BMI and its category.
         """
         print(f"\nYour BMI is {round(self.bmi, 2)}.")
         print(f"You are classified as {self.category}.")
@@ -63,4 +63,5 @@ if __name__=="__main__":
     bmi = CalculateBMI(1.73, 87)
     bmi.display_results()
     print(bmi)
+ 
 
