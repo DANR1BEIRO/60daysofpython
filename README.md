@@ -23,3 +23,4 @@
 - [x] Day 22 - Calculate BMI
 - [x] Day 23 - Guess game
 - [x] Day 24 - Multiplication table
+- [x] Day 25 - Random number generator
