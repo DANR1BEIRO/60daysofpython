@@ -11,7 +11,7 @@ class CalculateBMI:
 
         """
         Initialize the CalculateBMI class.
-        If height and weight are not provided, prompt the user for imput
+        If height and weight are not provided, prompt the user for input
         """
         
         self.height = height if height is not None else self.get_input("Enter your height (m): ", "height")
@@ -21,7 +21,7 @@ class CalculateBMI:
 
     def get_input(self, prompt, input_type):
         """
-        Helper method to get valid user input for height ow weight
+        Method to get valid user input for height ow weight
         """
         while True:
             try:
