@@ -25,3 +25,4 @@
 - [x] Day 24 - Multiplication table
 - [x] Day 25 - Random number generator
 - [x] Day 26 - Write and read a txt file
+- [x] Day 27 - Converts celsius to fahrenheit and vice versa
