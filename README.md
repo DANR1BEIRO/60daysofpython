@@ -28,3 +28,4 @@
 - [x] Day 27 - Converts celsius to fahrenheit and vice versa
 - [x] Day 28 - Timer
 - [x] Day 29 - Current date and hour
+- [x] Day 30 - 10 sec countdown timer
