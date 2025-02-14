@@ -27,3 +27,4 @@
 - [x] Day 26 - Write and read a txt file
 - [x] Day 27 - Converts celsius to fahrenheit and vice versa
 - [x] Day 28 - Timer
+- [x] Day 29 - Current date and hour
