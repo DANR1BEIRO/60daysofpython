@@ -29,3 +29,4 @@
 - [x] Day 28 - Timer
 - [x] Day 29 - Current date and hour
 - [x] Day 30 - 10 sec countdown timer
+- [x] Day 31 - Calculate the square root
