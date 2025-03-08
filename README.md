@@ -32,3 +32,4 @@
 - [x] Day 31 - Calculate the square root
 - [x] Day 32 - Launch die
 - [x] Day 33 - Count occurrences
+- [x] Day 34 - Json
